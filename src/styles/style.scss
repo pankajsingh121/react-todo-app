@@ -1,11 +1,11 @@
-$background-grey: #f3f3f3;
+$background-grey: #f0f0f0;
 $button-grey: #5e5e5e;
 $background-purple :#FF00FF;
-
+$background-indigo:indigo;
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 110%;
   line-height: 1.3rem;
   background-color: $background-grey;
 }
@@ -23,7 +23,7 @@ button {
 .container {
   font-size: 1rem;
   background-color: $background-purple;
-  width:50%;
+
 }
 
 .is-completed {
@@ -41,4 +41,34 @@ button {
   padding: .5rem;
 }
 
+.root {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+header {
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+  padding:1em;
+  font-size:1.2rem;
+  background-color: $background-indigo;
+}
+
+header a{
+  color : darkgrey;
+  text-decoration: none;
+}
+
+header a:hover{
+  font-weight: bold;
+  color:lightgrey;
+}
+
+
+
+footer{
+  padding :1em;
+}
