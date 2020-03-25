@@ -57,8 +57,7 @@ export default function Todo()  {
                  toggleDone={toggleDone}/>
                  </section>
           </div>
-        );
-    
+        ); 
 
 }
 
