@@ -23,6 +23,8 @@ button {
 .container {
   font-size: 1rem;
   background-color: $background-purple;
+  margin-top: 1em;
+  
 
 }
 
@@ -60,11 +62,13 @@ header {
 header a{
   color : darkgrey;
   text-decoration: none;
+ 
 }
 
 header a:hover{
   font-weight: bold;
   color:lightgrey;
+  cursor: pointer;
 }
 
 

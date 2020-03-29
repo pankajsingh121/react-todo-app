@@ -3,7 +3,7 @@ import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import Header from './Header';
 import Landing from './Landing'
 import Todo from './Todo';
-
+import LoginForm from './auth/LoginForm';
 export default class App extends React.Component
 {
  
@@ -16,6 +16,7 @@ export default class App extends React.Component
          <Header/>
          <Switch>
          <Route exact path="/" component={Landing}/>
+         <Route  path="/login" component ={LoginForm}/>
          <Route  path="/todo" render={()=><Todo />}/>
          </Switch>
 
