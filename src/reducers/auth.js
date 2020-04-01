@@ -1,7 +1,7 @@
 import { AUTH_USER, AUTH_ERROR } from '../actions/types';
 
 const token = localStorage.getItem('token');
-console.log(token);
+//console.log(token);
 const initial_state = {
     ...(token) && {authenticated: token},
     ...(!token) && {authenticated: ''},

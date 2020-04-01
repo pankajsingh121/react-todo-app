@@ -1,5 +1,7 @@
 import checkPropTypes from 'check-prop-types';
-
+import { applyMiddleware, createStore } from 'redux';
+import reducers from '../src/reducers';
+import thunk from 'redux-thunk';
 
 /**
  * Return node with given data-test atttribute
@@ -19,4 +21,9 @@ export const checkProps = (component, expectedProps) => {
         'props', 
         component.name);
     expect(propsErr).toBeUndefined();
+};
+
+export const testStore = (initialState) => {
+    const createStoreWithMiddleware =  createStore(reducers,applyMiddleware(thunk));    
+    return createStoreWithMiddleware;
 };
